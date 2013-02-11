@@ -54,7 +54,8 @@
 
 				<section>
 					<h1><small>MLibrary</small><br>Datamart</h1>
-					<h3>Because Excel spreadsheets is <br> <em>what they want</em></h3>
+					<h3>Giving the people<br> what they want:<br>
+					  <strong>Spreadsheets</strong></h3>
 					<p>
 						<small>Bill Dueber, University of Michigan</small>
 					</p>                  
@@ -70,30 +71,28 @@
 				
 				
 				<section>
-				  <h2>Problem 1:<br>Librarians want data</h2>
+				  <h2>Problem 1:<br>Generating reports is <em>boring</em></h2>
 				  <ul>
-				    <li>I want to support <em>data-driven decision making</em></li>
-				    <li>Generating reports is boring and time-consuming (why?)</li>
+				    <li>I want to support <em>data-driven decision making</em>.</li>
+				    <li>Canned reports tend to Not Do It.</li>         
+				    <li>So....drop into SQL to get information.</li>
 				    </ul></section>
 
 
         <section>
           <h2>Problem 2:<br>Aleph's Oracle tables</h2>
-          <h3>
-            <br>Table Z30, field z30_rec_key_3:</h3>
-            <ul>
-              <li>First 20 chars: vendor code</li>
-              <li>Next 15 chars: invoice number</li>
-              <li>Next 5 chars: line number</li>
-             </ul>
-               
+          <ul>
+            <li><strong>Example</strong>: The <em>invoice number</em> is
+          in characters 21-35 of field <code>z30_rec_key_3</code>.</li>
+          <li>End up in <code>substr</code> hell</li>
+          </ul>
         </section>
                        
         
         <section>
           <h2>Solution:</h2>    
           <ul>
-          <li>Build a data warehouse</li>
+          <li>Build a data warehouse<br><small>(now we have <em>two</em> problems)</small></li>
           <li>Build a query-builder and UI for it</li>
           </ul>
         </section>
@@ -101,15 +100,15 @@
         <section>     
           <section>
           <h2>Build a data warehouse</h2>  
-          <p><small>Thank you, Margaret Kelly</small></p>
+          <p><small>Thank you, Margaret Kelly and <em>Talend</em> software</small></p>
           <p>
             <img src="images/dataflow.png" width="110%">
           </p>
           </section>
 
           <section>  
-           <h2>What to support</h2>
-           <h3>I <em>have</em> to do this:</h3>
+           <h2>Decide what to support</h2>
+           <h3>I <em>have</em> to do this by hand:</h3>
            <p><code>
              All records with fixed field lang=eng (008/35-37) and with “&” in 245 $a or
              245 $b that also have one or more 246 fields, none of which contain the
@@ -117,7 +116,7 @@
             </section>
          
          <section>  
-           <h2>What to support</h2>
+           <h2>Decide what to support</h2>
            
            <h3>Should I have to do <em>this</em>?</h3>
            <code>
@@ -149,13 +148,18 @@
               <li>Up for a couple months</li>
               <li>People running 20-25 reports a week</li>
               <li>Waaaay more than we ran by hand<br>
-                <small>...even taking messing around / messing up into account</small></li>
+                <small>...even taking messing around / messing up into account</small></li>                        
+               <li>Implication: people are asking more of their data. 
+                 <strong>Good!</strong></li>
              </ul>
             </section>
            
            <section>
              <h2>Thanks!</h2>
-             <p>Bill Dueber, bill@dueber.com</p>
+             <p>Bill Dueber</p>
+             <p>University of Michigan</p>
+             <p>bill@dueber.com</p>  
+             <p><strong>billdueber</strong> on twitter/github/irc</p>
             </section>     
 
 			</div>
